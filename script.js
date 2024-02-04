@@ -1,6 +1,6 @@
 const fetchMe = () => {
     let userCity = document.getElementById('searchInput').value
-    let endpoint = "https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=705303948810324980db093f63a51039&units=metric"
+    let endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${userCity}&appid=705303948810324980db093f63a51039&units=metric`
     if (userCity != "") {
         fetch(endpoint).then((response) => {
             response.json().then(data => {
@@ -16,8 +16,6 @@ const fetchMe = () => {
                   temp.innerHTML =`${Math.round(data.main.temp)}℃`
                   myCity.innerHTML=`${data.name}, ${data.sys.country}`
                   description2.innerHTML =`${data.weather[0].description}`
-        
-                  
                   console.log(data.name);
             } )
           })
