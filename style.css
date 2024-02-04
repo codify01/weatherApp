@@ -8,7 +8,11 @@ body {
    background-size: cover;
    height: 100%;
 }
-
+.waterMark {
+    /* position: fixed; */
+    bottom: 0px;
+    right: 15px;
+}
 .details {
     backdrop-filter: blur(3px);
     /* width: 22%; */

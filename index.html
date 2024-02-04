@@ -13,7 +13,7 @@
         
         <div class="me-auto">
             <h1 id="temp" class="temp text-white mt-auto">30℃</h1>
-            <p id="location2" class="text-white fs-1">Okeho, NG</p>
+            <p id="myCity" class="text-white fs-1">Okeho, NG</p>
             <p id="description2" class="text-white fs-5">scattered clouds</p>
             <input type="search" id="searchInput" placeholder="Search..." class="form-control bg-transparent shadow-none border border-none text-white mb-4" />
 
@@ -21,43 +21,43 @@
         <div class="text-white border col-lg-3  rounded p-3 details">
             <h5 class="fs-5">Weather Details</h5>
             <div>
-                <div class="mb-4"><span>Location:</span><span id="location" class="float-end"></span></div>
-                <div class="mb-4"><span>Description:</span><span id="description" class="float-end">Town</span></div>
-                <div class="mb-4"><span>Humidity:</span><span id="humidity" class="float-end">Town</span></div>
-                <div class="mb-4"><span>Wind:</span><span id="wind" class="float-end">Town</span></div>
+                <div class="mb-4"><span>Location:</span><span id="city" class="float-end">--</span></div>
+                <div class="mb-4"><span>Description:</span><span id="description" class="float-end">--</span></div>
+                <div class="mb-4"><span>Humidity:</span><span id="humidity" class="float-end">--</span></div>
+                <div class="mb-4"><span>Wind:</span><span id="wind" class="float-end">--</span></div>
                 <hr>
-                <div class="mb-4"><span>Min:</span><span class="float-end">Town</span></div>
-                <div class="mb-4"><span>Max:</span><span class="float-end">Town</span></div>
-                <div class="mb-4"><span>Feels:</span><span class="float-end">Town</span></div>
-                <div class="mb-4"><span>Pressure:</span><span class="float-end">Town</span></div>
+                <div class="mb-4"><span>Min:</span><span id="minTemp" class="float-end">--</span></div>
+                <div class="mb-4"><span>Max:</span><span id="maxTemp" class="float-end">--</span></div>
+                <div class="mb-4"><span>Feels:</span><span id="feels" class="float-end">--</span></div>
+                <div class="mb-4"><span>Pressure:</span><span id="pressure" class="float-end">--</span></div>
             </div>
         </div>
         <div class="col-lg-3  d-none d-lg-block">
             <!-- <h5 class="fs-5">Weather Details</h5> -->
             <div class="text-white border details  rounded p-3 mb-1">
-                <div class="mb-2"><span>Location:</span><span id="location" class="float-end"></span></div>
-                <div class="mb-2"><span>Description:</span><span id="description" class="float-end">Town</span></div>
-                <div class="mb-2"><span>Humidity:</span><span id="humidity" class="float-end">Town</span></div>
-                <div class="mb-2"><span>Wind:</span><span id="wind" class="float-end">Town</span></div>
+                <div class="mb-2"><span>Location:</span><span class="float-end"></span></div>
+                <div class="mb-2"><span>Description:</span><span class="float-end">Town</span></div>
+                <div class="mb-2"><span>Humidity:</span><span class="float-end">Town</span></div>
+                <div class="mb-2"><span>Wind:</span><span class="float-end">Town</span></div>
             </div>
             <div class="text-white border details  rounded p-3 mb-1">
-                <div class="mb-2"><span>Location:</span><span id="location" class="float-end"></span></div>
-                <div class="mb-2"><span>Description:</span><span id="description" class="float-end">Town</span></div>
-                <div class="mb-2"><span>Humidity:</span><span id="humidity" class="float-end">Town</span></div>
-                <div class="mb-2"><span>Wind:</span><span id="wind" class="float-end">Town</span></div>
+                <div class="mb-2"><span>Location:</span><span  class="float-end"></span></div>
+                <div class="mb-2"><span>Description:</span><span class="float-end">Town</span></div>
+                <div class="mb-2"><span>Humidity:</span><span  class="float-end">Town</span></div>
+                <div class="mb-2"><span>Wind:</span><s class="float-end">Town</s></div>
             </div>
             <div class="text-white border details  rounded p-3 ">
-                <div class="mb-2"><span>Location:</span><span id="location" class="float-end"></span></div>
-                <div class="mb-2"><span>Description:</span><span id="description" class="float-end">Town</span></div>
-                <div class="mb-2"><span>Humidity:</span><span id="humidity" class="float-end">Town</span></div>
-                <div class="mb-2"><span>Wind:</span><span id="wind" class="float-end">Town</span></div>
+                <div class="mb-2"><span>Location:</span><span  class="float-end"></span></div>
+                <div class="mb-2"><span>Description:</span><span class="float-end">Town</span></div>
+                <div class="mb-2"><span>Humidity:</span><span  class="float-end">Town</span></div>
+                <div class="mb-2"><span>Wind:</span><span class="float-end">Town</span></div>
             </div>
         </div>
     </div>
       
 
     <button onclick="fetchMe()">test</button>
-    <p class="text-center text-white mt-">Designed by Oluwaseun Uthman (Codify)</p>
+    <p class="text-white waterMark text-center position-fixed">Designed by Oluwaseun Uthman (Codify)</p>
 
 
 
