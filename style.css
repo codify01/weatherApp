@@ -20,3 +20,37 @@ body {
 .temp {
     font-size: 155px;
 }
+
+/* another */
+
+  
+  .input {
+    height: 40px;
+    line-height: 28px;
+    /* padding: 0 1rem; */
+    width: 80%;
+    padding-left: .5rem;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    transition: .3s ease;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .input::placeholder {
+    color: #fff;
+
+  }
+  
+  .input:focus::placeholder {
+    color: #999;
+  }
+  
+  /* .icon {
+    position: absolute;
+    right: 1rem;
+    fill: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+  } */

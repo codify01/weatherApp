@@ -11,11 +11,15 @@
     <h1 class="text-center text-white mt-4">Weather Forecast App</h1>
     <div class="d-lg-flex align-item-baseline gap-5 container mt-4">
         
-        <div class="me-auto">
+        <div class="me-auto mb-4">
             <h1 id="temp" class="temp text-white mt-auto">30℃</h1>
             <p id="myCity" class="text-white fs-1">Okeho, NG</p>
             <p id="description2" class="text-white fs-5">scattered clouds</p>
-            <input type="search" id="searchInput" placeholder="Search..." class="form-control bg-transparent shadow-none border border-none text-white mb-4" />
+            <input type="search" id="searchInput" placeholder="Enter city name" class="input"><button class="btn btn-dark" onclick="fetchMe()">Search</button>
+            <!-- <div class="group">
+                <input class="input" type="search" placeholder="Enter city name">
+                <button onclick="fetchMe()">search</button>
+            </div> -->
 
         </div>
         <div class="text-white border col-lg-3  rounded p-3 details">
@@ -56,7 +60,7 @@
     </div>
       
 
-    <button onclick="fetchMe()">test</button>
+    
     <p class="text-white waterMark text-center position-fixed">Designed by Oluwaseun Uthman (Codify)</p>
 
 
