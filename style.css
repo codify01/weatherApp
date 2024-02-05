@@ -20,6 +20,9 @@ body {
 .temp {
     font-size: 155px;
 }
+.city {
+  text-transform: capitalize;
+}
 
 /* another */
 

@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body onload="currentCity()">
     <h1 class="text-center text-white mt-4">Weather Forecast App</h1>
     <div class="d-lg-flex align-item-baseline gap-5 container mt-4">
         
         <div class="me-auto mb-4">
             <h1 id="temp" class="temp text-white mt-auto">--</h1>
-            <p id="myCity" class="text-white fs-1">--</p>
+            <p id="myCity" class="text-white fs-1 city">--</p>
             <p id="description2" class="text-white fs-5">--</p>
             <input type="search" id="searchInput" placeholder="Enter city name" class="input"><button class="btn btn-dark" onclick="fetchMe()">Search</button>
-            <!-- <div class="group">
-                <input class="input" type="search" placeholder="Enter city name">
-                <button onclick="fetchMe()">search</button>
-            </div> -->
+            <div>
+                <img src="" alt="">
+            </div>
 
         </div>
         <div class="text-white border col-lg-3  rounded p-3 details">
             <h5 class="fs-5">Weather Details</h5>
             <div>
-                <div class="mb-4"><span>Location:</span><span id="city" class="float-end">--</span></div>
+                <div class="mb-4"><span>Location:</span><span id="city" class="float-end city">--</span></div>
                 <div class="mb-4"><span>Description:</span><span id="description" class="float-end">--</span></div>
                 <div class="mb-4"><span>Humidity:</span><span id="humidity" class="float-end">--</span></div>
                 <div class="mb-4"><span>Wind:</span><span id="wind" class="float-end">--</span></div>
@@ -39,26 +38,29 @@
         <div class="col-lg-3  d-none d-lg-block">
             <!-- <h5 class="fs-5">Weather Details</h5> -->
             <div class="text-white border details  rounded p-3 mb-1">
-                <div class="mb-2"><span>Location:</span><span class="float-end">--</span></div>
-                <div class="mb-2"><span>Description:</span><span class="float-end">--</span></div>
-                <div class="mb-2"><span>Humidity:</span><span class="float-end">--</span></div>
-                <div class="mb-2"><span>Wind:</span><span class="float-end">--</span></div>
+                <p>Current Location</p>
+                <div class="mb-1"><span>Location:</span><span id="currentCityName" class="float-end city">--</span></div>
+                <div class="mb-1"><span>Description:</span><span id="currentCityDescription" class="float-end">--</span></div>
+                <div class="mb-1"><span>Temperature:</span><span id="currentCityTemperature" class="float-end">--</span></div>
+                <div class=""><span>Wind:</span><span id="currentCityWind" class="float-end">--</span></div>
             </div>
             <div class="text-white border details  rounded p-3 mb-1">
-                <div class="mb-2"><span>Location:</span><span  class="float-end">--</span></div>
-                <div class="mb-2"><span>Description:</span><span class="float-end">--</span></div>
-                <div class="mb-2"><span>Humidity:</span><span  class="float-end">--</span></div>
-                <div class="mb-2"><span>Wind:</span><s class="float-end">--</s></div>
+                <p></p>
+                <div class="mb-1"><span>Location:</span><span  class="float-end city">--</span></div>
+                <div class="mb-1"><span>Description:</span><span class="float-end">--</span></div>
+                <div class="mb-1"><span>Humidity:</span><span  class="float-end">--</span></div>
+                <div class=""><span>Wind:</span><s class="float-end">--</s></div>
             </div>
             <div class="text-white border details  rounded p-3 ">
-                <div class="mb-2"><span>Location:</span><span  class="float-end">--</span></div>
-                <div class="mb-2"><span>Description:</span><span class="float-end">--</span></div>
-                <div class="mb-2"><span>Humidity:</span><span  class="float-end">--</span></div>
-                <div class="mb-2"><span>Wind:</span><span class="float-end">--</span></div>
+                <p></p>
+                <div class="mb-1"><span>Location:</span><span  class="float-end city">--</span></div>
+                <div class="mb-1"><span>Description:</span><span class="float-end">--</span></div>
+                <div class="mb-1"><span>Humidity:</span><span  class="float-end">--</span></div>
+                <div class=""><span>Wind:</span><span class="float-end">--</span></div>
             </div>
         </div>
     </div>
-      
+      <button onload="currentCity()">test</button>
 
     
     <p class="text-white waterMark text-center position-fixed">Designed by Oluwaseun Uthman (Codify)</p>

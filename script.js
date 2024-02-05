@@ -24,3 +24,23 @@ const fetchMe = () => {
         alert("Enter your city")
     }
 }
+
+const currentCity = () => {
+    navigator.geolocation.getCurrentPosition((cityData) => {
+        console.log(cityData);
+        let lat = cityData.coords.latitude
+        let lon = cityData.coords.longitude
+        let endpoint = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f8e4038bd05b258eea9e2417126bb07f&units=metric`
+        fetch(endpoint).then((response) => {
+            response.json().then(data => {
+                console.log(data);
+                currentCityName.innerHTML = `${data.name}  , ${data.sys.country}`;
+                currentCityDescription.innerHTML = `${data.weather[0].description}`
+                currentCityTemperature.innerHTML = `${data.main.temp}℃`
+                currentCityWind.innerHTML = `${data.wind.speed} m/s`
+            })
+        })
+    })
+    
+
+}
